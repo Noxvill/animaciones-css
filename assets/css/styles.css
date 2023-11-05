@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-areas: "barra-lateral" "grilla-imagenes" "footer";
+}
+.grid-container .menu-lateral {
+  display: flex;
+  grid-area: barra-lateral;
+  background-color: #141414;
+}
+.grid-container .grilla-imagenes {
+  grid-area: grilla-imagenes;
+}
+.grid-container .footer {
+  display: flex;
+  background-color: #141414;
+  grid-area: footer;
+}/*# sourceMappingURL=styles.css.map */
