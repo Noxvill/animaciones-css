@@ -6,6 +6,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
+// Vista Desktop
+
   .grid-container{
 
     height: 100vh;
@@ -24,7 +26,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-grid-area: barra-lateral;
+grid-area:barra-lateral;
 background-color: #141414;
 color: #f6f5ef;
 
@@ -155,3 +157,19 @@ font-weight:600;
 }
 
   }
+
+//   Vista Desktop
+
+@media (min-width: 576px){
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        'barra-lateral grilla-imagenes'
+        'barra-lateral grilla-imagenes'
+        'footer footer';
+
+    }
+}
