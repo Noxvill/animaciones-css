@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,19 +9,114 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
   grid-template-areas: "barra-lateral" "grilla-imagenes" "footer";
 }
 .grid-container .menu-lateral {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   grid-area: barra-lateral;
   background-color: #141414;
+  color: #f6f5ef;
+}
+.grid-container .menu-lateral img {
+  margin: 0 0 0 5%;
+  height: 40px;
+  width: auto;
+}
+.grid-container .svg2 {
+  margin: 0 5% 0 0;
+  fill: white;
+  width: 30px;
+  height: 30px;
+}
+.grid-container .busqueda {
+  margin: 0 0 0 -80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: comfortaa;
+}
+.grid-container .busqueda input {
+  height: 25px;
+  width: auto;
+  border-radius: 50px;
+  font-size: small;
+  text-align: start;
+  border: 3px solid #650d0d;
+  font-family: comfortaa;
 }
 .grid-container .grilla-imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   grid-area: grilla-imagenes;
+  background-color: #f2ece0;
+  color: #2e3435;
+  row-gap: 15px;
+  font-family: comfortaa;
+}
+.grid-container .grid-item {
+  margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 280px;
+  border-radius: 1%;
+  border: 1px solid #cabdbd;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 3px 3px #650d0d;
+  font-family: comfortaa;
+  font-size: 15px;
+}
+.grid-container .grid-item .textoprincipal {
+  font-weight: bold 800;
+}
+.grid-container .imagencard {
+  height: 230px;
+  width: 210px;
+  overflow: hidden;
+  margin: 20px;
+}
+.grid-container .imagencard img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-container .imagencard img:hover {
+  transform: scale(1.2);
+}
+.grid-container .btncomprar {
+  margin-top: 10px;
+  background-color: #141414;
+  color: whitesmoke;
+  height: 30px;
+  width: 280px;
+  font-family: comfortaa;
 }
 .grid-container .footer {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: #141414;
   grid-area: footer;
+  color: #f6f5ef;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+}
+.grid-container .siguenos {
+  margin: 0 0 0 0;
+}
+.grid-container .footer svg {
+  fill: white;
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=styles.css.map */
