@@ -65,9 +65,12 @@ input{
 
 }
 
+
+
 .grilla-imagenes{
 display: flex;
 flex-direction: column;
+// grid-template-columns: auto;
 justify-content: center;
 align-items:center ;
 grid-area: grilla-imagenes;
@@ -77,6 +80,14 @@ row-gap: 15px;
 font-family: comfortaa;
 
 }
+
+// .grillimg{
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+
+// }
 
 .grid-item{
     margin:10px 0 10px 0;
@@ -98,8 +109,31 @@ font-family: comfortaa;
 
         font-weight: bold 800;
     }
+}
+
+    .grid-items{
+        margin:0 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+        width: 280px;
+        border-radius: 1%;
+        border: 1px solid #cabdbd;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 3px 3px #650d0d;
+        font-family: comfortaa;
+        font-size: 15px;
+       
+    
+        .textoprincipal{
+    
+            font-weight: bold 800;
+        }
 
 }
+
 
 .imagencard{
 height: 230px;
@@ -157,19 +191,92 @@ font-weight:600;
 }
 
   }
+  
+//   Query para ocultar cosas en tamaño movil
+  @media (max-width:576px){
+
+    .menulat{
+               display: none;
+    }
+
+    .grilla-imagenes .grid-items{
+
+        display: none;
+    }
+
+ }
+
 
 //   Vista Desktop
 
 @media (min-width: 576px){
 
+
+    
     .grid-container{
         display: grid;
         grid-template-columns: 10% 90%;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
         grid-template-areas:
         'barra-lateral grilla-imagenes'
         'barra-lateral grilla-imagenes'
         'footer footer';
 
+        .grilla-imagenes{
+            justify-content: space-around;
+            flex-flow: wrap;
+           
+            column-gap: 20px;
+        }
+
+        .textoprincipal{
+
+            display: none;
+        }
+
     }
-}
+
+    .menulat{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 100px 200px 0;
+        color: #9d1a1a;
+        
+    }
+
+    .menu-lateral{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        input{
+
+            display: none;
+        }
+
+        .btn{
+
+            display: none;
+        }
+
+        .svg2{
+
+            display: none;
+        }
+
+        img{
+
+            margin: 0 0 0 0;
+        }
+        
+        }
+        
+
+
+
+        }
+
+        
