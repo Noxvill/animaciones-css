@@ -167,7 +167,7 @@ img:hover{
 
 .footer{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 background-color: #141414;
@@ -176,6 +176,18 @@ color: #f6f5ef;
 font-family: 'Comfortaa', sans-serif;
 font-weight:600;
 
+.acercade{
+
+    margin-top: 20px;
+
+}
+
+}
+
+.footerlow{
+
+    display: flex;
+    flex-direction: row;
 }
 
 .siguenos{
@@ -200,6 +212,11 @@ font-weight:600;
     }
 
     .grilla-imagenes .grid-items{
+
+        display: none;
+    }
+
+    .footerup{
 
         display: none;
     }

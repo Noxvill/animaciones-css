@@ -121,7 +121,7 @@
 }
 .grid-container .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #141414;
@@ -129,6 +129,13 @@
   color: #f6f5ef;
   font-family: "Comfortaa", sans-serif;
   font-weight: 600;
+}
+.grid-container .footer .acercade {
+  margin-top: 20px;
+}
+.grid-container .footerlow {
+  display: flex;
+  flex-direction: row;
 }
 .grid-container .siguenos {
   margin: 0 0 0 0;
@@ -144,6 +151,9 @@
     display: none;
   }
   .grilla-imagenes .grid-items {
+    display: none;
+  }
+  .footerup {
     display: none;
   }
 }
